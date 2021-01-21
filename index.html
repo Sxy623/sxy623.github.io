@@ -10,8 +10,15 @@
 </head>
 <body>
     <h1>Hello world!</h1>
+    <h1 id="time"></h1>
     <hr />
     <p>© 2021 Xinyi Shen.</p>
     <p>18888921102 | shenxinyi@zju.edu.cn</p>
+    <script>
+        function tick() {
+            document.getElementById("time").innerHTML = "It is " + new Date().toLocaleTimeString();
+        }
+        setInterval(tick, 1000);
+    </script>
 </body>
 </html>
